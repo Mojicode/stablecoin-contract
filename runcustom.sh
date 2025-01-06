@@ -1,0 +1,1 @@
+npx blueprint run --custom https://testnet.toncenter.com/api/v2/ --custom-version v2 --custom-type testnet --custom-key 2f28...86c5e

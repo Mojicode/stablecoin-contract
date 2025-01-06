@@ -255,7 +255,9 @@ export const sendToIndex = async (method: string, params: any, provider: Network
         'X-API-Key': apiKey
     };
 
-    const response = await fetch(rpc + method + '?' + new URLSearchParams(params), {
+    const url = rpc + method + '?' + new URLSearchParams(params);
+    console.log("url:", url);
+    const response = await fetch(url, {
         method: 'GET',
         headers: headers,
     });
